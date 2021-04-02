@@ -1,0 +1,24 @@
+#+TITLE: Scheme
+
+* Try scheme in emacs
+
+#+begin_src scheme
+(+ 2 3)
+#+end_src
+
+#+RESULTS:
+: 5
+
+#+begin_src scheme
+((compose (lambda (x)(list 'foo x))
+          (lambda (x)(list 'bar x')))
+ 'z')
+(foo (bar z))
+#+end_src
+
+#+begin_src scheme
+(- 3.4 3)
+#+end_src
+
+#+RESULTS:
+: 0.3999999999999999
